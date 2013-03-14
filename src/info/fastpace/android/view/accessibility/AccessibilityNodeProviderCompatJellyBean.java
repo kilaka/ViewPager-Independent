@@ -16,6 +16,8 @@
 
 package info.fastpace.android.view.accessibility;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.accessibility.AccessibilityNodeProvider;
@@ -25,6 +27,7 @@ import java.util.List;
 /**
  * JellyBean specific AccessibilityNodeProvider API implementation.
  */
+@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 class AccessibilityNodeProviderCompatJellyBean {
     interface AccessibilityNodeInfoBridge {
         public Object createAccessibilityNodeInfo(int virtualViewId);

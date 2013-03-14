@@ -16,12 +16,15 @@
 
 package info.fastpace.android.view.accessibility;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.view.View;
 import android.view.accessibility.AccessibilityRecord;
 
 /**
  * JellyBean specific AccessibilityRecord API implementation.
  */
+@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 class AccessibilityRecordCompatJellyBean {
 
     public static void setSource(Object record, View root, int virtualDescendantId) {

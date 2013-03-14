@@ -16,6 +16,8 @@
 
 package info.fastpace.android.view.accessibility;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.accessibility.AccessibilityNodeInfo;
@@ -23,6 +25,7 @@ import android.view.accessibility.AccessibilityNodeInfo;
 /**
  * JellyBean specific AccessibilityNodeInfo API implementation.
  */
+@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 class AccessibilityNodeInfoCompatJellyBean {
 
     public static void addChild(Object info, View child, int virtualDescendantId) {

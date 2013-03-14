@@ -1,0 +1,11 @@
+/gen
+/bin
+/local.properties
+/ant-clean.txt
+/ant.txt
+/ant_with_hw_accel.txt
+/ant_without_hw_accel.txt
+/.project~
+/version~
+*.DS_Store
+/ant_release.txt

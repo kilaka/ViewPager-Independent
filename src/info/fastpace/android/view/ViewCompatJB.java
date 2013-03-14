@@ -16,12 +16,15 @@
 
 package info.fastpace.android.view;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
 /**
  * Jellybean-specific View API access
  */
+@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 public class ViewCompatJB {
 
     public static boolean hasTransientState(View view) {

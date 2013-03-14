@@ -16,11 +16,14 @@
 
 package info.fastpace.android.view;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.view.View;
 
 /**
  * Jellybean MR1 - specific View API access.
  */
+@TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
 public class ViewCompatJellybeanMr1 {
 
     public static int getLabelFor(View view) {

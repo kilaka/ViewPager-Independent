@@ -16,11 +16,14 @@
 
 package info.fastpace.android.view.accessibility;
 
+import android.annotation.TargetApi;
+import android.os.Build;
 import android.view.accessibility.AccessibilityRecord;
 
 /**
  * ICS MR1 specific AccessibilityRecord API implementation.
  */
+@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1)
 class AccessibilityRecordCompatIcsMr1 {
 
     public static int getMaxScrollX(Object record) {
